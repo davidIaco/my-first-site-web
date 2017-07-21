@@ -1,0 +1,23 @@
+/* line 1, ../sass/reset.scss */
+html, body, header, section, nav, div, footer, h1, h2, p, ul {
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/reset.scss */
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/* line 17, ../sass/reset.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 23, ../sass/reset.scss */
+.row {
+  margin: 0 !important;
+}

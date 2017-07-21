@@ -1,0 +1,83 @@
+body > header {
+    
+    z-index: 1;   
+    position: relative;
+    background-image: url(http://localhost/html/assets/images/images.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-position: center top;
+    background-attachment: fixed;
+    
+}
+
+h1 {
+    
+    animation: anim-title 5s infinite;
+    text-shadow: 2px 2px 5px white, 0 0 3em white, 0 0 0.2em white; 
+    position: absolute;
+    bottom: 50%;
+    font-size: 5em;
+    text-align: center;
+}
+
+
+body > header > div {
+    position: absolute;
+    height: 34%;
+    overflow: hidden;
+    padding: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+
+body > header > p {
+    text-shadow: 2px 2px 5px blue, 0 0 3em blue, 0 0 0.2em blue;
+    font-size: 3em;
+    position: absolute;
+/*    background: #5bc0de;*/
+    bottom: 30%;
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+}
+
+.language {
+    
+    position: relative;
+    height: 40%;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+body > header .php {
+    
+    animation-name: php;
+    top: 115%;
+}
+
+body > header .java {
+    
+    animation-name: java;
+    top: 215%;
+}
+
+body > header .android {
+    
+    animation-name: android;
+     top: 315%;
+}
+
+body > header .js {
+    
+    animation-name: js;
+    top: 415%;
+}
+
+body > header .html {
+    
+    animation-name: html;
+    top: 515%;
+}
+

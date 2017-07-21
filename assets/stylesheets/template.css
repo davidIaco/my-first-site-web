@@ -1,0 +1,25 @@
+/* line 1, ../sass/template.scss */
+body {
+  position: absolute;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'dolce_vitaquite_regular', impact, arial, verdana, sans-serif;
+  font-size: small;
+}
+
+/* line 9, ../sass/template.scss */
+body > header {
+  position: relative;
+  background: bisque;
+  height: 80%;
+}
+
+/* line 15, ../sass/template.scss */
+#about {
+  display: none;
+}
+
+/* line 19, ../sass/template.scss */
+#about:target {
+  display: block;
+}

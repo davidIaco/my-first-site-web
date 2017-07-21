@@ -1,0 +1,65 @@
+/* line 2, ../../sass/nav/nav.scss */
+body > nav {
+  padding: 1em 7%;
+  z-index: 9;
+  /*    background: #ffffff;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* line 13, ../../sass/nav/nav.scss */
+body > nav > div > a {
+  background: #28a4c9;
+  display: inline-block;
+  text-align: center;
+  padding: .5em 1.5em;
+  margin: 0 .5em;
+}
+
+/* line 23, ../../sass/nav/nav.scss */
+body > nav > div > img {
+  width: 40%;
+  border-radius: 1000%;
+}
+
+/* line 29, ../../sass/nav/nav.scss */
+.float {
+  text-align: left;
+  float: left;
+}
+
+/* line 35, ../../sass/nav/nav.scss */
+.logo {
+  width: 20%;
+  float: left;
+  text-align: left;
+  margin-top: -12em;
+  transition: all .5s ease-in;
+}
+
+/* line 44, ../../sass/nav/nav.scss */
+nav a {
+  transition: all 1s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  opacity: .35;
+}
+
+/* line 50, ../../sass/nav/nav.scss */
+.link {
+  position: fixed;
+  width: 80%;
+  float: left;
+  text-align: right;
+}
+
+/* line 59, ../../sass/nav/nav.scss */
+nav a:hover {
+  opacity: 1;
+}
+
+/* line 64, ../../sass/nav/nav.scss */
+nav:hover .logo {
+  margin-top: 0;
+  transition: all .5s ease-in;
+}

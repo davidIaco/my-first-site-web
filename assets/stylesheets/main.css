@@ -1,0 +1,299 @@
+/* line 1, ../sass/reset.scss */
+html, body, header, section, nav, div, footer, h1, h2, p, ul {
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/reset.scss */
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/* line 17, ../sass/reset.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 23, ../sass/reset.scss */
+.row {
+  margin: 0 !important;
+}
+
+/* line 1, ../sass/template.scss */
+body {
+  position: absolute;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'dolce_vitaquite_regular', impact, arial, verdana, sans-serif;
+  font-size: small;
+}
+
+/* line 9, ../sass/template.scss */
+body > header {
+  position: relative;
+  background: bisque;
+  height: 80%;
+}
+
+/* line 15, ../sass/template.scss */
+#about {
+  display: none;
+}
+
+/* line 19, ../sass/template.scss */
+#about:target {
+  display: block;
+}
+
+/* line 1, ../sass/slider/slider.scss */
+body > header {
+  z-index: 1;
+  position: relative;
+  background-image: url(http://localhost/html/assets/images/images.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+/* line 13, ../sass/slider/slider.scss */
+h1 {
+  animation: anim-title 5s infinite;
+  text-shadow: 2px 2px 5px white, 0 0 3em white, 0 0 0.2em white;
+  position: absolute;
+  bottom: 50%;
+  font-size: 5em;
+  text-align: center;
+}
+
+/* line 24, ../sass/slider/slider.scss */
+body > header > div {
+  position: absolute;
+  height: 34%;
+  overflow: hidden;
+  padding: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+/* line 34, ../sass/slider/slider.scss */
+body > header > p {
+  text-shadow: 2px 2px 5px blue, 0 0 3em blue, 0 0 0.2em blue;
+  font-size: 3em;
+  position: absolute;
+  /*    background: #5bc0de;*/
+  bottom: 30%;
+  width: 100%;
+  text-align: center;
+  line-height: 2em;
+}
+
+/* line 45, ../sass/slider/slider.scss */
+.language {
+  position: relative;
+  height: 40%;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+/* line 54, ../sass/slider/slider.scss */
+body > header .php {
+  animation-name: php;
+  top: 115%;
+}
+
+/* line 60, ../sass/slider/slider.scss */
+body > header .java {
+  animation-name: java;
+  top: 215%;
+}
+
+/* line 66, ../sass/slider/slider.scss */
+body > header .android {
+  animation-name: android;
+  top: 315%;
+}
+
+/* line 72, ../sass/slider/slider.scss */
+body > header .js {
+  animation-name: js;
+  top: 415%;
+}
+
+/* line 78, ../sass/slider/slider.scss */
+body > header .html {
+  animation-name: html;
+  top: 515%;
+}
+
+/* line 2, ../sass/nav/nav.scss */
+body > nav {
+  padding: 1em 7%;
+  z-index: 9;
+  /*    background: #ffffff;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* line 13, ../sass/nav/nav.scss */
+body > nav > div > a {
+  background: #28a4c9;
+  display: inline-block;
+  text-align: center;
+  padding: .5em 1.5em;
+  margin: 0 .5em;
+}
+
+/* line 23, ../sass/nav/nav.scss */
+body > nav > div > img {
+  width: 40%;
+  border-radius: 1000%;
+}
+
+/* line 29, ../sass/nav/nav.scss */
+.float {
+  text-align: left;
+  float: left;
+}
+
+/* line 35, ../sass/nav/nav.scss */
+.logo {
+  width: 20%;
+  float: left;
+  text-align: left;
+  margin-top: -12em;
+  transition: all .5s ease-in;
+}
+
+/* line 44, ../sass/nav/nav.scss */
+nav a {
+  transition: all 1s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  opacity: .35;
+}
+
+/* line 50, ../sass/nav/nav.scss */
+.link {
+  position: fixed;
+  width: 80%;
+  float: left;
+  text-align: right;
+}
+
+/* line 59, ../sass/nav/nav.scss */
+nav a:hover {
+  opacity: 1;
+}
+
+/* line 64, ../sass/nav/nav.scss */
+nav:hover .logo {
+  margin-top: 0;
+  transition: all .5s ease-in;
+}
+
+@font-face {
+  font-family: 'dolce_vitaquite_regular';
+  src: url("./../font/dolce_vita-webfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+@keyframes anim-title {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  75% {
+    font-size: 100%;
+    margin-left: 25%;
+    width: 150%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes php {
+  0% {
+    top: 40%;
+    opacity: 0;
+  }
+  6%, 14% {
+    top: 15%;
+    opacity: 1;
+  }
+  20%, 100% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+@keyframes java {
+  20% {
+    top: 115%;
+    opacity: 0;
+  }
+  26%, 34% {
+    top: 15%;
+    opacity: 1;
+  }
+  40%, 100% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+@keyframes android {
+  40% {
+    top: 115%;
+    opacity: 0;
+  }
+  46%, 54% {
+    top: 15%;
+    opacity: 1;
+  }
+  60%, 100% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+@keyframes js {
+  60% {
+    top: 115%;
+    opacity: 0;
+  }
+  66%, 74% {
+    top: 15%;
+    opacity: 1;
+  }
+  80%, 100% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+@keyframes html {
+  80% {
+    top: 115%;
+    opacity: 0;
+  }
+  86%, 96% {
+    top: 15%;
+    opacity: 1;
+  }
+  100% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+/*.social-buttons {
+    
+    position: absolute;
+    left: 0;
+    top: 50%;
+}*/
+/* line 125, ../sass/animation/animation.scss */
+.btn-github {
+  color: white !important;
+}

@@ -1,0 +1,69 @@
+
+body > nav {
+    
+    padding: 1em 7%;    
+    z-index: 9;    
+/*    background: #ffffff;*/
+        position: fixed;
+        top: 0;
+        left: 0;
+               
+}
+
+body > nav > div > a {
+    
+    background: #28a4c9;
+    display: inline-block;
+    text-align: center;
+    padding: .5em 1.5em;
+    margin: 0 .5em;
+    
+}
+
+body > nav > div > img {
+    
+     width: 40%;
+     border-radius: 1000%;
+}
+
+.float {
+    
+    text-align: left;
+    float: left;    
+}
+
+.logo {
+  width: 20%;
+  float: left;
+  text-align: left;
+  margin-top: -12em;
+  transition: all .5s ease-in;
+  
+
+}
+nav a {
+  
+  transition: all 1s;     
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  opacity: .35;
+}
+.link {
+    
+  position: fixed;  
+  width: 80%;
+  float: left;
+  text-align: right;
+ 
+}
+
+nav a:hover {
+    
+    opacity: 1;
+}
+
+nav:hover .logo {
+    
+    margin-top: 0;
+    transition: all .5s ease-in;
+    
+}

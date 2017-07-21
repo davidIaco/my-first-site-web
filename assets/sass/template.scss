@@ -1,0 +1,21 @@
+body {
+    position: absolute;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'dolce_vitaquite_regular', impact, arial, verdana, sans-serif;
+    font-size: small;
+}
+
+body > header {
+    position: relative;
+    background: bisque;
+    height: 80%;
+}
+
+#about {
+    display: none;
+}
+
+#about:target {
+    display: block;
+}
